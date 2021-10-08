@@ -1,0 +1,18 @@
+import datetime
+n = input()
+t = input()
+n = n.split()
+t = t.split()
+dt_n = datetime.datetime(int(n[2]), int(n[1]), int(n[0]))
+dt_t = datetime.datetime(int(t[2]), int(t[1]), int(t[0]))
+result = 0
+
+if dt_n < dt_t:
+    result += 0
+elif int(n[2]) > int(t[2]):
+    result += 10000
+elif int(n[1]) > int(t[1]):
+    result += (int(n[1]) - int(t[1])) * 500
+elif int(n[0]) > int(t[0]):
+    result += (int(n[0]) - int(t[0])) * 15
+print(result)
