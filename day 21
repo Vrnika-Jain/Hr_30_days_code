@@ -10,6 +10,7 @@ template <class T>
     for(int j=0;j<i.size();j++) 
         cout<<i[j]<<endl;
  } 
+ 
 void printArray(vector<auto> a)
 {
     for(auto i:a)
